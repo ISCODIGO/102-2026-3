@@ -6,6 +6,8 @@ int main() {
     int largo;
     scanf("%d", &largo);
 
+    puts("Cuadrado...");
+
     for(int i = 0; i < largo; i++) {
 
         for(int j = 0; j < largo; j++) {
@@ -14,7 +16,7 @@ int main() {
         puts("");
     }
 
-    puts("");
+    puts("Triangulo 1...");
 
     for(int i = 0; i < largo; i++) {
 
@@ -24,7 +26,7 @@ int main() {
         puts("");
     }
 
-    puts("");
+    puts("Triangulo 2...");
 
     for(int i = 0; i < largo; i++) {
         int estrellas = i + 1;
@@ -40,7 +42,19 @@ int main() {
         puts("");
     }
 
-    puts("");
+    puts("Triangulo 2...");
+
+    for(int i = 0; i < largo; i++) {
+        for(int j = 0; j < largo - i - 1; j++) {
+            printf("  ");
+        }
+        for(int j = 0; j <= i; j++) {
+            printf("%c ", '*');
+        }
+        puts("");
+    }
+
+    puts("Diagonal 1...");
 
     for(int i = 0; i < largo; i++) {
         for(int j = 0; j < largo; j++) {
@@ -53,7 +67,7 @@ int main() {
         puts("");
     }
 
-    puts("");
+    puts("Diagonal 2...");
 
     for(int i = 0; i < largo; i++) {
         for(int j = 0; j < largo; j++) {
