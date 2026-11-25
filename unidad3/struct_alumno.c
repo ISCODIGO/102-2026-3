@@ -11,7 +11,8 @@ struct alumno {
 
 // Quita el '\n' que deja fgets al final de la cadena
 void limpiar_cadena(char *s) {
-    s[strcspn(s, "\n")] = '\0';
+    int posicion = strcspn(s, "\n");
+    s[posicion] = '\0';
 }
 
 // Descarta lo que quedó en el buffer después de un scanf
